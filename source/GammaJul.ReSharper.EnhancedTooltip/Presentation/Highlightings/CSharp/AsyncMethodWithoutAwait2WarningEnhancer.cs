@@ -7,9 +7,9 @@ using JetBrains.ReSharper.Psi.CodeAnnotations;
 namespace GammaJul.ReSharper.EnhancedTooltip.Presentation.Highlightings.CSharp {
 
 	[SolutionComponent(Instantiation.ContainerAsyncAnyThreadUnsafe)]
-	internal sealed class AsyncMethodWithoutAwait2WarningEnhancer : CSharpHighlightingEnhancer<AsyncMethodWithoutAwait2Warning> {
+	internal sealed class AsyncMethodWithoutAwait2WarningEnhancer : CSharpHighlightingEnhancer<AsyncMethodWithoutAwaitWarning> {
 
-		protected override void AppendTooltip(AsyncMethodWithoutAwait2Warning highlighting, CSharpColorizer colorizer) {
+		protected override void AppendTooltip(AsyncMethodWithoutAwaitWarning highlighting, CSharpColorizer colorizer) {
 			colorizer.AppendPlainText("This ");
 			colorizer.AppendKeyword("async");
 			colorizer.AppendPlainText(" method lacks '");
@@ -29,6 +29,7 @@ namespace GammaJul.ReSharper.EnhancedTooltip.Presentation.Highlightings.CSharp {
 			CodeAnnotationsConfiguration codeAnnotationsConfiguration,
 			HighlighterIdProviderFactory highlighterIdProviderFactory)
 			: base(textStyleHighlighterManager, codeAnnotationsConfiguration, highlighterIdProviderFactory) {
+
 		}
 
 	}
