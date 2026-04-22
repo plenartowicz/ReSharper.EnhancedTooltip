@@ -1,4 +1,5 @@
 using System.ComponentModel.Composition;
+using System.ComponentModel.Composition;
 using Microsoft.VisualStudio.Language.Intellisense;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Utilities;
@@ -15,7 +16,7 @@ namespace GammaJul.ReSharper.EnhancedTooltip.VisualStudio {
 	[Order(After = QuickInfoSourceProviderNames.VsSemantic)]
 	[Order(After = QuickInfoSourceProviderNames.ReSharper)]
 	[Order(After = VsSquiggleCollectorQuickInfoSourceProvider.Name)]
-	[ContentType("any")]
+	[ContentType("CSharp")]
 	[Export(typeof(IQuickInfoSourceProvider))]
 	public sealed class MainQuickInfoSourceProvider : QuickInfoSourceProviderBase {
 

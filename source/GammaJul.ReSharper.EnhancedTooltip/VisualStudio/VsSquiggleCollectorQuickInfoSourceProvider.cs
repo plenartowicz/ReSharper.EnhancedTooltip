@@ -15,7 +15,7 @@ namespace GammaJul.ReSharper.EnhancedTooltip.VisualStudio {
   [Order(After = QuickInfoSourceProviderNames.VsLightBulb)]
 	[Order(After = QuickInfoSourceProviderNames.ReSharper)]
 	[Order(Before = MainQuickInfoSourceProvider.Name)]
-	[ContentType("any")]
+	[ContentType("CSharp")]
 	[Export(typeof(IQuickInfoSourceProvider))]
 	public sealed class VsSquiggleCollectorQuickInfoSourceProvider : QuickInfoSourceProviderBase {
 
