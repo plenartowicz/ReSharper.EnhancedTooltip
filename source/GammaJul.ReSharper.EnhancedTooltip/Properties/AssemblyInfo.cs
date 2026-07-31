@@ -9,4 +9,4 @@ using System.Reflection;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-[assembly: AssemblyVersion("2025.3.4.3")]
+[assembly: AssemblyVersion("2026.1.4.0")]

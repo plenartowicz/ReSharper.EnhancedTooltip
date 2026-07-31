@@ -58,6 +58,16 @@ namespace GammaJul.ReSharper.EnhancedTooltip.ParameterInfo {
 			set => _context.NamedArguments = value;
 		}
 
+		public bool ShouldSuggestSuppress {
+			get => _context.ShouldSuggestSuppress;
+			set => _context.ShouldSuggestSuppress = value;
+		}
+
+		public bool IsForced {
+			get => _context.IsForced;
+			set => _context.IsForced = value;
+		}
+
 		public Type ParameterListNodeType
 			=> _context.ParameterListNodeType;
 

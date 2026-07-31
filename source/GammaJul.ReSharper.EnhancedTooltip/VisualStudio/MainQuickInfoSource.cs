@@ -147,7 +147,7 @@ namespace GammaJul.ReSharper.EnhancedTooltip.VisualStudio {
               continue;
 
             // ignore existing R# elements
-            if (content is IQuickInfoContent)
+            if (content is IReSharperQuickInfoContent)
               continue;
 
             var contentFullName = content.GetType().FullName;

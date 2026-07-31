@@ -51,7 +51,7 @@ namespace GammaJul.ReSharper.EnhancedTooltip.Presentation {
 			=> Get(CSharpHighlightingAttributeIds.ENUM, "enum name", "enum name", "User Types(Enums)");
 
 		public string ExtensionMethod
-			=> Get(CSharpHighlightingAttributeIds.EXTENSION_METHOD, "extension method name", VsIdentifier, VsIdentifier);
+			=> Get(CSharpHighlightingAttributeIds.EXTENSION_METHOD_DECLARATION, "extension method name", VsIdentifier, VsIdentifier);
 
 		public string Event
 			=> Get(CSharpHighlightingAttributeIds.EVENT, "event name", VsIdentifier, VsIdentifier);
@@ -75,7 +75,7 @@ namespace GammaJul.ReSharper.EnhancedTooltip.Presentation {
 			=> Get(CSharpHighlightingAttributeIds.LOCAL_VARIABLE, "local name", VsIdentifier, VsIdentifier);
 
 		public string Method
-			=> Get(CSharpHighlightingAttributeIds.METHOD, "method name", VsIdentifier, VsIdentifier);
+			=> Get(CSharpHighlightingAttributeIds.METHOD_DECLARATION, "method name", VsIdentifier, VsIdentifier);
 
 		public string Namespace
 			=> Get(CSharpHighlightingAttributeIds.NAMESPACE, "namespace name", VsIdentifier, VsIdentifier);
